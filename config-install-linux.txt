@@ -1,0 +1,35 @@
+# ESTE DOCUMENTO CONTIENE LAS INSTRUCCIONES PARA INSTALAR Y CONFIGURAR LA HERRAMIENTA PASERVER DE RAD-STUDIO DESDE SU VERSION 10.2.3 EN LINUX
+
+# REQUERIMIENTO PREVIO: 
+# MAQUIN VIRTUAL CON S.O. LUBUNTU O XUBUNTU PARA OCUPAR MENOS RECURSOS
+
+# SE REQUIERE ACTUALIZAR EL PASSWORD DEL USUARIO ROOT
+sudo passwd root
+
+# VISUALIZACION DE IP
+sudo apt install net-tools
+
+# INSTALACION DE FIRAFOX PARA NAVEGACION Y PRUEBAS
+sudo apt install firefox
+
+# INSTALACION DE DEPENDENCIAS
+
+apt-get -y update && apt-get -y install joe wget p7zip-full curl unzip build-essential zlib1g-dev libcurl4-gnutls-dev && apt-get -y install mysecureshell && apt-get -y autoremove && apt-get -y autoclean
+
+# DESCARGAR LA HERRAMIENTA PASERVER PARA RAD Studio Tokyo Release 3 (10.2.3)
+wget http://altd.embarcadero.com/releases/studio/19.0/PAServer/Release3/LinuxPAServer19.0.tar.gz
+
+# DESCOMPRIMIR LA HERRAMIENTA
+tar -xvf LinuxPAServer19.0.tar.gz
+
+
+
+
+
+
+
+
+
+
+$requerimientos mysql
+sudo apt install libmysqlclient*
