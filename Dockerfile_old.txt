@@ -1,0 +1,23 @@
+FROM ubuntu:20.04
+
+LABEL maintainer="Herson Melo <hersonpc@gmail.com>"
+
+COPY Project2 /app/bin/Project2
+
+WORKDIR /app
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get -y update && \
+    apt-get -y install joe wget p7zip-full curl unzip build-essential zlib1g-dev libcurl4-gnutls-dev && \
+    apt-get -y install mysecureshell && \
+    apt-get -y autoremove && \
+    apt-get -y autoclean
+
+# RAD Studio Tokyo Release 3 (10.2.3)
+
+WORKDIR /app/bin
+
+CMD ["/app/bin/Project2","start"]
+
+EXPOSE 8090
