@@ -15,6 +15,8 @@ sudo apt install firefox
 # INSTALACION DE DEPENDENCIAS
 
 apt-get -y update && apt-get -y install joe wget p7zip-full curl unzip build-essential zlib1g-dev libcurl4-gnutls-dev && apt-get -y install mysecureshell && apt-get -y autoremove && apt-get -y autoclean
+#sudo apt update
+#sudo apt install joe wget p7zip-full curl build-essential zlib1g-dev libcurl4-gnutls-dev
 
 # DESCARGAR LA HERRAMIENTA PASERVER PARA RAD Studio Tokyo Release 3 (10.2.3)
 wget http://altd.embarcadero.com/releases/studio/19.0/PAServer/Release3/LinuxPAServer19.0.tar.gz
